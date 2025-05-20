@@ -25,7 +25,7 @@ function LoginPage() {
 
       if (response.ok) {
         alert('Login successful');
-        navigate('/');
+        navigate('/chat');
         // You can redirect to another page or store JWT here
       } else {
         setError(data.message);  // Set error message if login fails

@@ -1,0 +1,138 @@
+/* Comic Sans and italic styles retained */
+.login-container,
+.login-box,
+.login-box * {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-style: italic;
+}
+
+/* Shrink login box slightly and center it visually */
+.login-box {
+  width: 360px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #000000;
+  text-align: center;
+}
+
+/* Scenic background with centered login box */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 10px; 
+  background-image: url('C:\Replate_new\Replate\client\public\pic1.jpg');
+  /* background-image: url('https://i.pinimg.com/736x/38/4b/8c/384b8c09ff2c6749a4475c2955ee9053.jpg'); Replace with your actual image path */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px); /* subtle background blur */
+}
+
+
+/* Heading style */
+h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Description text */
+.login-description {
+  margin-bottom: 25px;
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+/* Form input styles */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.input-field:focus {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Button styles */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #80376C;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #662a56;
+}
+
+/* Sign up link */
+.signup-link {
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .login-box {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.851);
+  padding: 15px 30px;
+  text-align: center;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.project-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}

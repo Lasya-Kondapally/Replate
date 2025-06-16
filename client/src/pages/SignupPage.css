@@ -1,0 +1,131 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* changed from height to min-height */
+  background: linear-gradient(to right, #b3ffab, #12fff7);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px; /* for spacing on smaller screens */
+  margin-top: -40px;
+}
+
+/* Box that contains both form and image */
+.signup-box {
+  display: flex;
+  /* flex-direction: row; */
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 750px;
+  max-width: 100%;
+  height: 470px;
+  margin: auto;
+  margin-top: 40px;
+  /* height: auto; remove fixed height */
+}
+/* Form section */
+.signup-form {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input fields */
+.signup-form input {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 13px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Button */
+.signup-form button {
+  padding: 12px;
+  background-color: #3cbcab;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.signup-form button:hover {
+  background-color: #32a597;
+}
+
+/* Link */
+.signup-form p {
+  font-size: 14px;
+  margin-top: 15px;
+  color: #666;
+}
+
+.signup-form a {
+  color: #3cbcab;
+  text-decoration: none;
+}
+
+/* Right image section */
+.signup-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dffdfd; /* optional background color */
+  background-position: center right;
+}
+
+.signup-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.form-bottom {
+  text-align: center;
+  font-size: 14px;
+}
+.form-top {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.get-started {
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.851);
+  padding: 10px 25px;
+  text-align: center;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.project-name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}

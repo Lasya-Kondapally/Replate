@@ -7,7 +7,8 @@ router.post('/', async (req, res) => {
   const { name, age, location, foodType, quantity, expiry } = req.body;
 
   try {
-    const [lat, lng] = location.split(',').map(Number); // Convert to float
+    // const [lat, lng] = location.split(',').map(Number); // Convert to float
+    const [lng, lat] = location.coordinates;
     const newDonor = new Donor({
       name,
       age,

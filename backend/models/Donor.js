@@ -4,6 +4,11 @@ const donorSchema = new mongoose.Schema(
   {
     name: String,
     age: Number,
+    userId: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: 'User'
+},
+
     location: {
       type: { type: String, default: "Point" },
       coordinates: [Number], // [longitude, latitude]
@@ -13,6 +18,12 @@ const donorSchema = new mongoose.Schema(
       default: false,
       required: true, // ✅ This will guarantee it's saved
     },
+    claimedBy: {
+  type: mongoose.Schema.Types.ObjectId,
+  ref: 'User',
+  default: null
+}
+,
     foodType: String,
     quantity: String,
     expiry: String,

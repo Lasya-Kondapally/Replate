@@ -33,6 +33,7 @@ import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import Chatpage from './pages/Chatpage';
 import LocationPicker from './pages/LocationPicker';
+import Dashboard from './pages/Dashboard';
 import './App.css';
 import 'maplibre-gl/dist/maplibre-gl.css';
 
@@ -44,6 +45,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/chat" element={<Chatpage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+
         
         {/* ✅ Updated location route with heading and LocationPicker */}
         <Route path="/location" element={

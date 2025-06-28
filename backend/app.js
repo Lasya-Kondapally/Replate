@@ -16,6 +16,8 @@ const donorRoutes = require("./routes/donors"); // ✅ added
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use("/api/users", require("./routes/userRoutes")); // ✅ Mount the users route
+
 
 // Connect to DB
 //connectDB();

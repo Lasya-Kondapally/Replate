@@ -24,8 +24,18 @@ function LoginPage() {
       const data = await response.json();
 
       if (response.ok) {
+        console.log(data);  // 👈 Add this
+
         alert('Login successful');
-        navigate('/chat');
+        // Save user data to localStorage (for dashboard use)
+localStorage.setItem("user", JSON.stringify({
+  _id: data.user._id,
+  name: data.user.name,
+  email: data.user.email
+}));
+
+navigate('/chat');
+
         // You can redirect to another page or store JWT here
       } else {
         setError(data.message);  // Set error message if login fails

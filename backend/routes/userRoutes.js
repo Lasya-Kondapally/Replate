@@ -79,6 +79,17 @@ router.post('/', async (req, res) => {
     res.status(500).json({ message: "Server error", error: err.message });
   }
 });
+// PUT /api/auth/update/:id - Update user profile
+router.put('/update/:id', async (req, res) => {
+  try {
+    const updated = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!updated) return res.status(404).json({ message: 'User not found' });
+    res.json({ message: 'User updated', user: updated });
+  } catch (err) {
+    console.error("Error updating user:", err);
+    res.status(500).json({ message: 'Server error' });
+  }
+});
 
 
 module.exports = router;

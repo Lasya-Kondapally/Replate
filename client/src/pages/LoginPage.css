@@ -25,7 +25,7 @@
   align-items: center;
   height: 100vh;
   padding-top: 10px; 
-  background-image: url('C:\Users\GCET\Desktop\mini-project\22nd-june\Replate\client\public\pic1.jpg');
+  background-image: url('C:\Users\pc\Desktop\Everything on Desktop\Projects\Replate_final\Replate\client\public\images\pic1.jpg');
   /* background-image: url('https://i.pinimg.com/736x/38/4b/8c/384b8c09ff2c6749a4475c2955ee9053.jpg'); Replace with your actual image path */
   background-size: cover; /* Ensure the image covers the entire container */
   background-position: center; /* Center the image */
@@ -112,23 +112,25 @@ h2 {
   }
 }
 
+/* NAVBAR - MATCHING HOMEPAGE EXACTLY */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.851);
-  padding: 15px 30px;
-  text-align: center;
+  background-color: #B99099; /* EXACT SAME COLOR AS HOMEPAGE */
+  padding: 1rem 1.5rem; /* SAME PADDING AS HOMEPAGE (p-4) */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   z-index: 1000;
-  backdrop-filter: blur(6px);
 }
 
 .project-name {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.75rem; /* SAME SIZE AS HOMEPAGE h3 */
   font-weight: bold;
   color: #fff;
-  letter-spacing: 1px;
+  font-family: 'Pacifico', cursive; /* SAME FONT AS HOMEPAGE */
 }
 
 .error-message {

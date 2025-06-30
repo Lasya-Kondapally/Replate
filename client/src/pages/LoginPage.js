@@ -213,12 +213,21 @@ function LoginPage() {
         console.log(data);  // 👈 Add this
 
         alert('Login successful');
+        localStorage.setItem(
+    'user',
+    JSON.stringify({
+      _id: data.user._id,
+      name: data.user.name,
+      email: data.user.email,
+    })
+  );
+  localStorage.removeItem('chatState');   
         // Save user data to localStorage (for dashboard use)
-localStorage.setItem("user", JSON.stringify({
-  _id: data.user._id,
-  name: data.user.name,
-  email: data.user.email
-}));
+// localStorage.setItem("user", JSON.stringify({
+//   _id: data.user._id,
+//   name: data.user.name,
+//   email: data.user.email
+// }));
 
 navigate('/chat');
 
